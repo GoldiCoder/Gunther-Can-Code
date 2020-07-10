@@ -1,0 +1,31 @@
+#include<iostream>
+#include <stdio.h>
+ // to use 'printf', <stdio.h> library must be included.
+using namespace std;
+int main()
+{
+    char even[] ={'E', 'V', 'E', 'N' }; // this is a character array
+    char i = 'i'; // make sure to use (''). 
+    // Using (" ")gives lots of troubles.
+    
+    // character means a single alphabet 
+    // so if you want to use a word like "EVEN", it will come under string.
+    
+  //Switch statements work on int values 
+    //(like char,int,shorts,longs,enum) 
+    //but not on char arrays or strings in C++.
+    // so we cant use switch statement here 
+    
+    string a  = "EVEN";
+    if (a == "EVEN") {
+        printf ("Even");
+    }
+   else if ( a == "ODD") {
+       printf ("Odd");
+   }
+    else {
+        printf ("Default");}
+ 
+  
+   return 0;
+}
